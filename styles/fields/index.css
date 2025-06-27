@@ -1,3 +1,5 @@
+@import url(dropearea.css);
+
 input, textarea, select{
     appearance: none;
     width: 100%;
@@ -16,7 +18,8 @@ label{
 
 input:focus,
 select:focus,
-textarea:focus{
+textarea:focus,
+input[type="date"]:focus-within{
     outline: 0.25rem solid var(--surface-secondary);
     border: 0.125rem solid var(--stroke-hightlight);
     outline-offset: .1px;
@@ -43,4 +46,11 @@ input[type="date"] {
 }
 select{
     background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+}
+input::-webkit-contacts-auto-fill-button,
+input::-webkit-credentials-auto-fill-button {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
 }
