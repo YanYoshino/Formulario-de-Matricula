@@ -5,6 +5,7 @@ label + .radio-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
     gap: 1rem;
+    
 }
 .radio-inner{
     border: 1px solid var(--stroke-default);
